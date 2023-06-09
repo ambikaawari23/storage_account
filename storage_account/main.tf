@@ -13,10 +13,10 @@ resource "azurerm_storage_container" "container" {
   container_access_type = "container" # "blob" "private"
 }
 
-resource "azurerm_storage_blob" "blob" {
-  name                   = "sample-file.sh"
-  storage_account_name   = azurerm_storage_account.storage.name
-  storage_container_name = azurerm_storage_container.container.name
-  type                   = "Block" #page 
-  source                 = "commands.sh"
-}
+# resource "azurerm_storage_blob" "blob" {
+#   name                   = "sample-file.sh"
+#   storage_account_name   = azurerm_storage_account.storage.name
+#   storage_container_name = azurerm_storage_container.container.name
+#   type                   = "Block" #page 
+#   source                 = "commands.sh"
+# }
